@@ -22,6 +22,12 @@ function expectIncludes(content, needle, label) {
   }
 }
 
+function expectNotIncludes(content, needle, label) {
+  if (content.includes(needle)) {
+    failures.push(`Unexpected temporary content in ${label}: ${needle}`);
+  }
+}
+
 function expectRegex(content, pattern, label, description) {
   if (!pattern.test(content)) {
     failures.push(`Missing expected ${description} in ${label}`);
@@ -44,9 +50,18 @@ if (indexHtml) {
   expectIncludes(indexHtml, "How It Works", "index.html");
   expectIncludes(indexHtml, "Built with privacy in mind", "index.html");
   expectIncludes(indexHtml, "The app uses Apple's Screen Time APIs.", "index.html");
+  expectIncludes(indexHtml, "Family Controls entitlement", "index.html");
+  expectIncludes(
+    indexHtml,
+    "users authorize monitoring for their own selected apps on their own device.",
+    "index.html",
+  );
   expectIncludes(indexHtml, "The app does not access content inside other apps.", "index.html");
-  expectIncludes(indexHtml, "Preview mockup", "index.html");
-  expectIncludes(indexHtml, "Final app screens coming soon", "index.html");
+  expectIncludes(indexHtml, "Illustrative interface", "index.html");
+  expectIncludes(indexHtml, "Product preview", "index.html");
+  expectNotIncludes(indexHtml, "Coming Soon", "index.html");
+  expectNotIncludes(indexHtml, "Preview mockup", "index.html");
+  expectNotIncludes(indexHtml, "Final app screens coming soon", "index.html");
   expectIncludes(indexHtml, "Does the app read content inside other apps?", "index.html");
   expectIncludes(indexHtml, "Built for self-management and privacy-first daily reminders.", "index.html");
 }
@@ -59,6 +74,20 @@ if (privacyHtml) {
   expectIncludes(privacyHtml, "wrq142857@gmail.com", "privacy.html");
   expectIncludes(privacyHtml, "Effective Date: March 2026", "privacy.html");
   expectIncludes(privacyHtml, "Contact: wrq142857@gmail.com", "privacy.html");
+  expectIncludes(privacyHtml, "Data retention", "privacy.html");
+  expectIncludes(privacyHtml, "Permission controls", "privacy.html");
+  expectIncludes(privacyHtml, "Deletion requests", "privacy.html");
+  expectIncludes(privacyHtml, "Users can stop monitoring at any time", "privacy.html");
+  expectIncludes(
+    privacyHtml,
+    "We retain only the information reasonably necessary to operate the app",
+    "privacy.html",
+  );
+  expectIncludes(
+    privacyHtml,
+    "request deletion of any support correspondence",
+    "privacy.html",
+  );
 }
 
 if (supportHtml) {

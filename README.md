@@ -44,4 +44,4 @@ The homepage will be served from `index.html`, and the other pages will be:
 - All links use relative paths, so the site works on GitHub Pages without
   server-side routing.
 - No backend, database, or build step is required.
-- Replace `wrq142857@gmail.com` with your real support email before publishing.
+- Update `wrq142857@gmail.com` if you want a different public support address.
