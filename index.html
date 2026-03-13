@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckIn Duck | Privacy-First Daily App Check-Ins</title>
+    <meta
+      name="description"
+      content="CheckIn Duck is a privacy-preserving iOS app for daily app-based habits, reminders, and Screen Time API usage threshold check-ins."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="CheckIn Duck home">
+          <span class="brand-mark">CD</span>
+          <span>CheckIn Duck</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="privacy.html" data-nav="privacy">Privacy</a>
+          <a href="support.html" data-nav="support">Support</a>
+        </nav>
+        <a class="nav-pill" href="#screens">Coming Soon</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Privacy-preserving daily habits</p>
+            <h1>Never forget your daily app check-in.</h1>
+            <p class="hero-text">
+              A privacy-first iOS app that helps you complete daily app-based
+              habits before your deadline. If a user-selected app is used for
+              more than 3 minutes in a day, the task is automatically marked as
+              completed.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#how-it-works">Learn More</a>
+              <a class="button button-secondary" href="privacy.html"
+                >Privacy Policy</a
+              >
+            </div>
+            <ul class="hero-points" aria-label="Product highlights">
+              <li>Built for self-management, not parental control</li>
+              <li>Uses Screen Time APIs with explicit permission</li>
+              <li>Tracks completion through a usage threshold only</li>
+            </ul>
+          </div>
+
+          <div class="device device-hero" aria-hidden="true">
+            <div class="device-notch"></div>
+            <div class="device-screen">
+              <div class="mock-header">
+                <span>Today</span>
+                <span>9:41</span>
+              </div>
+              <div class="mock-task accent-border">
+                <div>
+                  <p class="mock-label">Task</p>
+                  <h2>Open Duolingo</h2>
+                </div>
+                <span class="status-complete">Completed</span>
+              </div>
+              <div class="mock-panel">
+                <div>
+                  <p class="mock-label">Deadline</p>
+                  <strong>8:00 PM</strong>
+                </div>
+                <div>
+                  <p class="mock-label">Threshold</p>
+                  <strong>3 min</strong>
+                </div>
+              </div>
+              <div class="mock-panel two-column">
+                <div>
+                  <p class="mock-label">Streak</p>
+                  <strong>12 days</strong>
+                </div>
+                <div>
+                  <p class="mock-label">Reminder</p>
+                  <strong>6:45 PM</strong>
+                </div>
+              </div>
+              <div class="mock-history">
+                <div class="history-row">
+                  <span>Mon</span>
+                  <span class="history-dot done"></span>
+                </div>
+                <div class="history-row">
+                  <span>Tue</span>
+                  <span class="history-dot done"></span>
+                </div>
+                <div class="history-row">
+                  <span>Wed</span>
+                  <span class="history-dot pending"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">How It Works</p>
+            <h2>Three steps, with clear user control.</h2>
+            <p>
+              The flow is intentionally simple so users understand what is being
+              measured, why permission is needed, and how completion is decided.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <article class="card step-card">
+              <span class="step-number">1</span>
+              <h3>Choose apps</h3>
+              <p>
+                Users explicitly select which apps to monitor using Apple’s
+                system picker.
+              </p>
+            </article>
+            <article class="card step-card">
+              <span class="step-number">2</span>
+              <h3>Set a deadline</h3>
+              <p>
+                Set a daily deadline and reminder schedule for each task.
+              </p>
+            </article>
+            <article class="card step-card">
+              <span class="step-number">3</span>
+              <h3>Complete automatically</h3>
+              <p>
+                If the selected app reaches the daily usage threshold, the task
+                is marked as completed automatically.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Key features</p>
+            <h2>Designed for habits, reminders, and trust.</h2>
+          </div>
+          <div class="grid grid-4">
+            <article class="card feature-card">
+              <h3>Automatic completion</h3>
+              <p>
+                Tasks are completed automatically when a selected app reaches
+                the configured daily usage threshold.
+              </p>
+            </article>
+            <article class="card feature-card">
+              <h3>Smart reminders</h3>
+              <p>
+                Receive reminders before your deadline if the task has not been
+                completed.
+              </p>
+            </article>
+            <article class="card feature-card">
+              <h3>Daily streaks</h3>
+              <p>
+                Track consistency with streaks and recent completion history.
+              </p>
+            </article>
+            <article class="card feature-card">
+              <h3>Privacy first</h3>
+              <p>
+                Users explicitly choose monitored apps. The app does not inspect
+                content or actions inside third-party apps.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container privacy-band">
+          <div class="section-heading aligned-left">
+            <p class="eyebrow">Privacy &amp; permissions</p>
+            <h2>Built with privacy in mind</h2>
+            <p>
+              This product is intended for personal self-management and daily
+              accountability. It is not a monitoring or surveillance tool.
+            </p>
+          </div>
+          <div class="privacy-card">
+            <ul class="privacy-list">
+              <li>The app uses Apple's Screen Time APIs.</li>
+              <li>
+                Users explicitly grant permission before app activity can be
+                monitored.
+              </li>
+              <li>Users explicitly choose which apps to include.</li>
+              <li>The app does not access content inside other apps.</li>
+              <li>
+                The app does not detect taps, text, messages, or screen content.
+              </li>
+              <li>
+                The app only uses usage thresholds to determine task completion.
+              </li>
+            </ul>
+            <div class="privacy-note">
+              <p class="mock-label">Review note</p>
+              <p>
+                The monitored scope is limited to user-selected apps and daily
+                completion logic. No in-app content inspection is performed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="screens">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Interface preview</p>
+            <h2>Preview mockups for the first release.</h2>
+            <p>
+              Final app screens coming soon. These previews show the intended
+              structure without implying hidden behavior or unsupported access.
+            </p>
+          </div>
+          <div class="grid grid-3 preview-grid">
+            <article class="preview-card">
+              <div class="device device-small" aria-hidden="true">
+                <div class="device-notch"></div>
+                <div class="device-screen">
+                  <p class="preview-title">Today View</p>
+                  <div class="wire-block tall"></div>
+                  <div class="wire-row">
+                    <span class="wire-chip"></span>
+                    <span class="wire-chip light"></span>
+                  </div>
+                  <div class="wire-block"></div>
+                </div>
+              </div>
+              <h3>Today View</h3>
+              <p>Preview mockup</p>
+              <p>Final app screens coming soon</p>
+            </article>
+            <article class="preview-card">
+              <div class="device device-small" aria-hidden="true">
+                <div class="device-notch"></div>
+                <div class="device-screen">
+                  <p class="preview-title">Task Setup</p>
+                  <div class="wire-list">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="wire-block tall"></div>
+                  <div class="wire-row">
+                    <span class="wire-chip"></span>
+                    <span class="wire-chip"></span>
+                  </div>
+                </div>
+              </div>
+              <h3>Task Setup</h3>
+              <p>Interface preview</p>
+              <p>Final app screens coming soon</p>
+            </article>
+            <article class="preview-card">
+              <div class="device device-small" aria-hidden="true">
+                <div class="device-notch"></div>
+                <div class="device-screen">
+                  <p class="preview-title">History</p>
+                  <div class="history-stack">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="wire-block"></div>
+                </div>
+              </div>
+              <h3>History</h3>
+              <p>Preview mockup</p>
+              <p>Final app screens coming soon</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Clear answers for review and user trust.</h2>
+          </div>
+          <div class="faq-list">
+            <article class="card faq-item">
+              <h3>Does the app read content inside other apps?</h3>
+              <p>
+                No. It only relies on Apple’s Screen Time APIs and usage
+                thresholds for user-selected apps.
+              </p>
+            </article>
+            <article class="card faq-item">
+              <h3>Does the app monitor all apps automatically?</h3>
+              <p>
+                No. Users explicitly choose which apps they want to include.
+              </p>
+            </article>
+            <article class="card faq-item">
+              <h3>Can the app detect buttons or actions inside another app?</h3>
+              <p>
+                No. It does not inspect in-app content or user actions.
+              </p>
+            </article>
+            <article class="card faq-item">
+              <h3>Who is this app for?</h3>
+              <p>
+                It is designed for people who want simple reminders and daily
+                accountability for app-based habits.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <p class="footer-brand">CheckIn Duck</p>
+          <p>Built for self-management and privacy-first daily reminders.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html">Support</a>
+        </div>
+        <p>&copy; <span data-current-year>2026</span> CheckIn Duck</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
