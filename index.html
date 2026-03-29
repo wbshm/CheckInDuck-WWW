@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CheckIn Duck | Privacy-First Daily App Check-Ins</title>
+    <title>CheckInDuck | Daily Habit Check-Ins for iPhone</title>
     <meta
       name="description"
-      content="CheckIn Duck is a privacy-preserving iOS app for daily app-based habits, reminders, and Screen Time API usage threshold check-ins."
+      content="CheckInDuck is a privacy-first iPhone app for app-based daily habits, reminder deadlines, calendar records, widget status, and premium upgrades."
     />
+    <link rel="icon" type="image/png" href="appstore.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
     <header class="site-header">
       <div class="container nav-shell">
-        <a class="brand" href="index.html" aria-label="CheckIn Duck home">
-          <span class="brand-mark">CD</span>
-          <span>CheckIn Duck</span>
+        <a class="brand" href="index.html" aria-label="CheckInDuck home">
+          <img class="brand-icon" src="appstore.png" alt="CheckInDuck app icon" />
+          <span>CheckInDuck</span>
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="index.html" data-nav="home">Home</a>
           <a href="privacy.html" data-nav="privacy">Privacy</a>
           <a href="support.html" data-nav="support">Support</a>
         </nav>
-        <a class="nav-pill" href="#review-note">Review Summary</a>
+        <a class="nav-pill" href="mailto:wrq142857@gmail.com">Contact</a>
       </div>
     </header>
 
@@ -30,75 +31,60 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Privacy-preserving daily habits</p>
-            <h1>Never forget your daily app check-in.</h1>
+            <p class="eyebrow">Privacy-first iPhone habit tracker</p>
+            <h1>Build better daily habits with automatic app check-ins.</h1>
             <p class="hero-text">
-              A privacy-first iOS app that helps you complete daily app-based
-              habits before your deadline. If a user-selected app is used for
-              more than 3 minutes in a day, the task is automatically marked as
-              completed.
+              CheckInDuck helps users create app-based daily tasks, choose a
+              monitored app, set a deadline, and complete the task automatically
+              when the configured usage threshold is reached. Calendar records,
+              reminders, widget status, and premium upgrades are all built into
+              the current app.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#how-it-works">Learn More</a>
+              <a class="button button-primary" href="#screens">View Screens</a>
               <a class="button button-secondary" href="privacy.html"
                 >Privacy Policy</a
               >
             </div>
             <ul class="hero-points" aria-label="Product highlights">
-              <li>Built for self-management, not parental control</li>
-              <li>Uses Screen Time APIs with explicit permission</li>
-              <li>Tracks completion through a usage threshold only</li>
+              <li>Uses Screen Time and Family Controls only after explicit user authorization</li>
+              <li>Supports reminders, widget status, and calendar-based progress review</li>
+              <li>Premium unlocks unlimited tasks, full history, and custom reminder timing</li>
             </ul>
+            <div class="hero-metrics" aria-label="Current product scope">
+              <article class="metric-pill">
+                <strong>Auto check-in</strong>
+                <span>App usage threshold completion</span>
+              </article>
+              <article class="metric-pill">
+                <strong>Calendar history</strong>
+                <span>Daily records and notes</span>
+              </article>
+              <article class="metric-pill">
+                <strong>Widget + reminders</strong>
+                <span>Visible status throughout the day</span>
+              </article>
+            </div>
           </div>
 
-          <div class="device device-hero" aria-hidden="true">
-            <div class="device-notch"></div>
-            <div class="device-screen">
-              <div class="mock-header">
-                <span>Today</span>
-                <span>9:41</span>
-              </div>
-              <div class="mock-task accent-border">
-                <div>
-                  <p class="mock-label">Task</p>
-                  <h2>Open Duolingo</h2>
-                </div>
-                <span class="status-complete">Completed</span>
-              </div>
-              <div class="mock-panel">
-                <div>
-                  <p class="mock-label">Deadline</p>
-                  <strong>8:00 PM</strong>
-                </div>
-                <div>
-                  <p class="mock-label">Threshold</p>
-                  <strong>3 min</strong>
-                </div>
-              </div>
-              <div class="mock-panel two-column">
-                <div>
-                  <p class="mock-label">Streak</p>
-                  <strong>12 days</strong>
-                </div>
-                <div>
-                  <p class="mock-label">Reminder</p>
-                  <strong>6:45 PM</strong>
-                </div>
-              </div>
-              <div class="mock-history">
-                <div class="history-row">
-                  <span>Mon</span>
-                  <span class="history-dot done"></span>
-                </div>
-                <div class="history-row">
-                  <span>Tue</span>
-                  <span class="history-dot done"></span>
-                </div>
-                <div class="history-row">
-                  <span>Wed</span>
-                  <span class="history-dot pending"></span>
-                </div>
-              </div>
+          <div class="hero-visuals" aria-label="CheckInDuck interface preview">
+            <div class="hero-card hero-card-main">
+              <img
+                src="screen/img_3.png"
+                alt="CheckInDuck task dashboard screenshot"
+              />
+            </div>
+            <div class="hero-card hero-card-widget">
+              <img
+                src="screen/img_2.png"
+                alt="CheckInDuck widget screenshot"
+              />
+            </div>
+            <div class="hero-card hero-card-onboarding">
+              <img
+                src="screen/img_1.png"
+                alt="CheckInDuck onboarding screenshot"
+              />
             </div>
           </div>
         </div>
@@ -107,35 +93,38 @@
       <section class="section" id="how-it-works">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">How It Works</p>
-            <h2>Three steps, with clear user control.</h2>
+            <p class="eyebrow">How it works</p>
+            <h2>A clear flow from permission to completion.</h2>
             <p>
-              The flow is intentionally simple so users understand what is being
-              measured, why permission is needed, and how completion is decided.
+              The current build is centered on user-controlled habit tasks.
+              People choose what to monitor, when the task should be due, and
+              how the app should remind them before the deadline.
             </p>
           </div>
           <div class="grid grid-3">
             <article class="card step-card">
               <span class="step-number">1</span>
-              <h3>Choose apps</h3>
+              <h3>Authorize and choose</h3>
               <p>
-                Users explicitly select which apps to monitor using Apple’s
-                system picker.
+                During onboarding, users can enable notifications and Family
+                Controls access, then pick the app that should count toward a
+                task.
               </p>
             </article>
             <article class="card step-card">
               <span class="step-number">2</span>
-              <h3>Set a deadline</h3>
+              <h3>Set task rules</h3>
               <p>
-                Set a daily deadline and reminder schedule for each task.
+                Each task includes a name, monitored app, daily deadline,
+                repeat rule, and auto check-in threshold measured in minutes.
               </p>
             </article>
             <article class="card step-card">
               <span class="step-number">3</span>
-              <h3>Complete automatically</h3>
+              <h3>Review progress</h3>
               <p>
-                If the selected app reaches the daily usage threshold, the task
-                is marked as completed automatically.
+                The app updates status automatically, shows progress in the
+                widget and calendar, and keeps daily records for follow-up.
               </p>
             </article>
           </div>
@@ -145,149 +134,157 @@
       <section class="section section-soft">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Key features</p>
-            <h2>Designed for habits, reminders, and trust.</h2>
+            <p class="eyebrow">Current features</p>
+            <h2>Aligned with the app that exists today.</h2>
+            <p>
+              These sections are based on the current iOS project, including
+              the task flow, calendar records, settings, widget support, and
+              StoreKit-powered premium upgrade path.
+            </p>
           </div>
-          <div class="grid grid-4">
+          <div class="grid grid-3">
             <article class="card feature-card">
-              <h3>Automatic completion</h3>
+              <h3>Task dashboard</h3>
               <p>
-                Tasks are completed automatically when a selected app reaches
-                the configured daily usage threshold.
+                Daily tasks can be filtered by status and manually checked when
+                needed, with a focused list for what still needs action today.
               </p>
             </article>
             <article class="card feature-card">
-              <h3>Smart reminders</h3>
+              <h3>Auto check-in threshold</h3>
               <p>
-                Receive reminders before your deadline if the task has not been
-                completed.
+                Tasks can complete automatically after the selected app reaches
+                the configured daily usage limit.
               </p>
             </article>
             <article class="card feature-card">
-              <h3>Daily streaks</h3>
+              <h3>Reminder scheduling</h3>
               <p>
-                Track consistency with streaks and recent completion history.
+                Notifications can remind users before the deadline, including a
+                deadline-time reminder path in the app.
               </p>
             </article>
             <article class="card feature-card">
-              <h3>Privacy first</h3>
+              <h3>Calendar and notes</h3>
               <p>
-                Users explicitly choose monitored apps. The app does not inspect
-                content or actions inside third-party apps.
+                A calendar view summarizes completed, pending, and missed days,
+                with per-day details and notes.
+              </p>
+            </article>
+            <article class="card feature-card">
+              <h3>Widget status</h3>
+              <p>
+                Home Screen widgets surface today&apos;s habit status without
+                requiring users to open the app first.
+              </p>
+            </article>
+            <article class="card feature-card">
+              <h3>Premium upgrade</h3>
+              <p>
+                Premium currently unlocks unlimited tasks, full history access,
+                and custom reminder lead time, with purchase and restore flows.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="review-note">
+      <section class="section" id="screens">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Screens</p>
+            <h2>Real product screenshots from the current app flow.</h2>
+            <p>
+              The gallery below covers onboarding, widget state, task planning,
+              task creation, calendar review, and the premium upgrade screen.
+            </p>
+          </div>
+          <div class="screen-grid">
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_1.png"
+                alt="CheckInDuck onboarding screen"
+              />
+              <h3>Onboarding</h3>
+              <p>Introduces the habit loop and permission flow.</p>
+            </article>
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_2.png"
+                alt="CheckInDuck widget screen"
+              />
+              <h3>Widget</h3>
+              <p>Shows task status directly on the Home Screen.</p>
+            </article>
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_3.png"
+                alt="CheckInDuck plan screen"
+              />
+              <h3>Task dashboard</h3>
+              <p>Summaries, task states, and one-tap check-ins.</p>
+            </article>
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_4.png"
+                alt="CheckInDuck create task screen"
+              />
+              <h3>Create task</h3>
+              <p>Configure the monitored app, deadline, and auto check-in rule.</p>
+            </article>
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_5.png"
+                alt="CheckInDuck calendar screen"
+              />
+              <h3>Calendar review</h3>
+              <p>Review daily outcomes, task details, and notes.</p>
+            </article>
+            <article class="screen-card">
+              <img
+                loading="lazy"
+                src="screen/img_6.png"
+                alt="CheckInDuck premium upgrade screen"
+              />
+              <h3>Premium</h3>
+              <p>Purchase and restore flows for the expanded feature set.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="privacy-boundary">
         <div class="container privacy-band">
           <div class="section-heading aligned-left">
-            <p class="eyebrow">Privacy &amp; permissions</p>
-            <h2>Built with privacy in mind</h2>
+            <p class="eyebrow">Privacy and permissions</p>
+            <h2>Explicit authorization, narrow monitoring scope.</h2>
             <p>
-              This product is intended for personal self-management and daily
-              accountability. It is not a monitoring or surveillance tool.
+              CheckInDuck is built for personal habit tracking. It relies on
+              Apple&apos;s permission model and only evaluates app-usage thresholds
+              for apps the user chooses.
             </p>
           </div>
           <div class="privacy-card">
             <ul class="privacy-list">
-              <li>The app uses Apple's Screen Time APIs.</li>
-              <li>
-                The app requests the Family Controls entitlement so users authorize monitoring for their own selected apps on their own device.
-              </li>
-              <li>
-                Users explicitly grant permission before app activity can be
-                monitored.
-              </li>
-              <li>Users explicitly choose which apps to include.</li>
-              <li>The app does not access content inside other apps.</li>
-              <li>
-                The app does not detect taps, text, messages, or screen content.
-              </li>
-              <li>
-                The app only uses usage thresholds to determine task completion.
-              </li>
+              <li>Users decide whether to enable notifications and Family Controls access.</li>
+              <li>Only user-selected apps are included in a task.</li>
+              <li>Task completion is based on daily usage thresholds, not in-app content.</li>
+              <li>The app does not read messages, taps, typed text, or screen contents inside other apps.</li>
+              <li>Task records, notes, and shared widget state are stored for the app experience.</li>
+              <li>Purchases are handled through Apple StoreKit, and optional in-app feedback can send the user&apos;s submitted message to the developer.</li>
             </ul>
             <div class="privacy-note">
               <p class="mock-label">Review note</p>
               <p>
-                The monitored scope is limited to user-selected apps and daily
-                completion logic. No in-app content inspection is performed.
+                The app is positioned as a self-management product, not a
+                surveillance or hidden tracking tool.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="screens">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Interface preview</p>
-            <h2>Illustrative interface views for review.</h2>
-            <p>
-              Product preview components are shown here to communicate the
-              intended structure and privacy boundaries without implying hidden
-              behavior or unsupported access.
-            </p>
-          </div>
-          <div class="grid grid-3 preview-grid">
-            <article class="preview-card">
-              <div class="device device-small" aria-hidden="true">
-                <div class="device-notch"></div>
-                <div class="device-screen">
-                  <p class="preview-title">Today View</p>
-                  <div class="wire-block tall"></div>
-                  <div class="wire-row">
-                    <span class="wire-chip"></span>
-                    <span class="wire-chip light"></span>
-                  </div>
-                  <div class="wire-block"></div>
-                </div>
-              </div>
-              <h3>Today View</h3>
-              <p>Illustrative interface</p>
-              <p>Product preview for review context</p>
-            </article>
-            <article class="preview-card">
-              <div class="device device-small" aria-hidden="true">
-                <div class="device-notch"></div>
-                <div class="device-screen">
-                  <p class="preview-title">Task Setup</p>
-                  <div class="wire-list">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="wire-block tall"></div>
-                  <div class="wire-row">
-                    <span class="wire-chip"></span>
-                    <span class="wire-chip"></span>
-                  </div>
-                </div>
-              </div>
-              <h3>Task Setup</h3>
-              <p>Interface preview</p>
-              <p>Product preview for review context</p>
-            </article>
-            <article class="preview-card">
-              <div class="device device-small" aria-hidden="true">
-                <div class="device-notch"></div>
-                <div class="device-screen">
-                  <p class="preview-title">History</p>
-                  <div class="history-stack">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="wire-block"></div>
-                </div>
-              </div>
-              <h3>History</h3>
-              <p>Illustrative interface</p>
-              <p>Product preview for review context</p>
-            </article>
           </div>
         </div>
       </section>
@@ -296,33 +293,35 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">FAQ</p>
-            <h2>Clear answers for review and user trust.</h2>
+            <h2>Short answers to the key questions.</h2>
           </div>
           <div class="faq-list">
             <article class="card faq-item">
-              <h3>Does the app read content inside other apps?</h3>
+              <h3>What does the app monitor?</h3>
               <p>
-                No. It only relies on Apple’s Screen Time APIs and usage
-                thresholds for user-selected apps.
+                It only evaluates usage thresholds for apps the user explicitly
+                selected for a task.
               </p>
             </article>
             <article class="card faq-item">
-              <h3>Does the app monitor all apps automatically?</h3>
+              <h3>Can it read activity inside other apps?</h3>
               <p>
-                No. Users explicitly choose which apps they want to include.
+                No. CheckInDuck does not inspect text, content, taps, messages,
+                or any hidden in-app behavior.
               </p>
             </article>
             <article class="card faq-item">
-              <h3>Can the app detect buttons or actions inside another app?</h3>
+              <h3>What does premium unlock?</h3>
               <p>
-                No. It does not inspect in-app content or user actions.
+                Premium unlocks unlimited tasks, history beyond the free window,
+                and custom reminder lead times.
               </p>
             </article>
             <article class="card faq-item">
-              <h3>Who is this app for?</h3>
+              <h3>How can users get help?</h3>
               <p>
-                It is designed for people who want simple reminders and daily
-                accountability for app-based habits.
+                Support, privacy questions, and billing issues can all be sent
+                to <a href="mailto:wrq142857@gmail.com">wrq142857@gmail.com</a>.
               </p>
             </article>
           </div>
@@ -333,15 +332,15 @@
     <footer class="site-footer">
       <div class="container footer-shell">
         <div>
-          <p class="footer-brand">CheckIn Duck</p>
-          <p>Built for self-management and privacy-first daily reminders.</p>
+          <p class="footer-brand">CheckInDuck</p>
+          <p>Daily app habits, reminders, widgets, and calendar progress on iPhone.</p>
         </div>
         <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="privacy.html">Privacy</a>
           <a href="support.html">Support</a>
         </div>
-        <p>&copy; <span data-current-year>2026</span> CheckIn Duck</p>
+        <p>&copy; <span data-current-year>2026</span> CheckInDuck</p>
       </div>
     </footer>
 

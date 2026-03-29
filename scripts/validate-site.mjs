@@ -45,49 +45,31 @@ if (indexHtml) {
   expectIncludes(indexHtml, 'href="privacy.html"', "index.html");
   expectIncludes(indexHtml, 'href="support.html"', "index.html");
   expectIncludes(indexHtml, 'href="styles.css"', "index.html");
+  expectIncludes(indexHtml, 'href="appstore.png"', "index.html");
   expectIncludes(indexHtml, 'src="script.js"', "index.html");
-  expectIncludes(indexHtml, "Never forget your daily app check-in.", "index.html");
-  expectIncludes(indexHtml, "How It Works", "index.html");
-  expectIncludes(indexHtml, "Built with privacy in mind", "index.html");
-  expectIncludes(indexHtml, "The app uses Apple's Screen Time APIs.", "index.html");
-  expectIncludes(indexHtml, "Family Controls entitlement", "index.html");
-  expectIncludes(
-    indexHtml,
-    "users authorize monitoring for their own selected apps on their own device.",
-    "index.html",
-  );
-  expectIncludes(indexHtml, "The app does not access content inside other apps.", "index.html");
-  expectIncludes(indexHtml, "Illustrative interface", "index.html");
-  expectIncludes(indexHtml, "Product preview", "index.html");
-  expectNotIncludes(indexHtml, "Coming Soon", "index.html");
+  expectIncludes(indexHtml, "Build better daily habits with automatic app check-ins.", "index.html");
+  expectIncludes(indexHtml, "Current features", "index.html");
+  expectIncludes(indexHtml, "Real product screenshots from the current app flow.", "index.html");
+  expectIncludes(indexHtml, "Widget + reminders", "index.html");
+  expectIncludes(indexHtml, "Premium unlocks unlimited tasks", "index.html");
+  expectIncludes(indexHtml, "Explicit authorization, narrow monitoring scope.", "index.html");
+  expectIncludes(indexHtml, "Purchases are handled through Apple StoreKit", "index.html");
+  expectIncludes(indexHtml, "What does the app monitor?", "index.html");
+  expectIncludes(indexHtml, "screen/img_6.png", "index.html");
+  expectNotIncludes(indexHtml, "Illustrative interface", "index.html");
+  expectNotIncludes(indexHtml, "Product preview", "index.html");
   expectNotIncludes(indexHtml, "Preview mockup", "index.html");
-  expectNotIncludes(indexHtml, "Final app screens coming soon", "index.html");
-  expectIncludes(indexHtml, "Does the app read content inside other apps?", "index.html");
-  expectIncludes(indexHtml, "Built for self-management and privacy-first daily reminders.", "index.html");
 }
 
 if (privacyHtml) {
   expectIncludes(privacyHtml, 'href="index.html"', "privacy.html");
   expectIncludes(privacyHtml, 'href="support.html"', "privacy.html");
   expectIncludes(privacyHtml, "Privacy Policy", "privacy.html");
-  expectIncludes(privacyHtml, "Apple Screen Time APIs", "privacy.html");
-  expectIncludes(privacyHtml, "wrq142857@gmail.com", "privacy.html");
-  expectIncludes(privacyHtml, "Effective Date: March 2026", "privacy.html");
+  expectIncludes(privacyHtml, "Family Controls", "privacy.html");
+  expectIncludes(privacyHtml, "Widget status may be shared through app-group storage", "privacy.html");
+  expectIncludes(privacyHtml, "Premium purchases and restores are handled through Apple StoreKit.", "privacy.html");
+  expectIncludes(privacyHtml, "Effective Date: March 29, 2026", "privacy.html");
   expectIncludes(privacyHtml, "Contact: wrq142857@gmail.com", "privacy.html");
-  expectIncludes(privacyHtml, "Data retention", "privacy.html");
-  expectIncludes(privacyHtml, "Permission controls", "privacy.html");
-  expectIncludes(privacyHtml, "Deletion requests", "privacy.html");
-  expectIncludes(privacyHtml, "Users can stop monitoring at any time", "privacy.html");
-  expectIncludes(
-    privacyHtml,
-    "We retain only the information reasonably necessary to operate the app",
-    "privacy.html",
-  );
-  expectIncludes(
-    privacyHtml,
-    "request deletion of any support correspondence",
-    "privacy.html",
-  );
 }
 
 if (supportHtml) {
@@ -95,14 +77,17 @@ if (supportHtml) {
   expectIncludes(supportHtml, 'href="privacy.html"', "support.html");
   expectIncludes(supportHtml, "Support", "support.html");
   expectIncludes(supportHtml, "General support", "support.html");
-  expectIncludes(supportHtml, "Privacy questions", "support.html");
-  expectIncludes(supportHtml, "Business inquiries", "support.html");
+  expectIncludes(supportHtml, "Permission setup help", "support.html");
+  expectIncludes(supportHtml, "Premium and restore issues", "support.html");
+  expectIncludes(supportHtml, "Privacy and feedback", "support.html");
   expectIncludes(supportHtml, "wrq142857@gmail.com", "support.html");
   expectIncludes(supportHtml, "We aim to respond within a reasonable time.", "support.html");
 }
 
 if (stylesCss) {
   expectRegex(stylesCss, /:root\s*{/, "styles.css", "root variables");
+  expectRegex(stylesCss, /\.hero-visuals/, "styles.css", "hero screenshot layout");
+  expectRegex(stylesCss, /\.screen-grid/, "styles.css", "screenshot grid styles");
   expectRegex(stylesCss, /@media\s*\(/, "styles.css", "responsive rules");
 }
 
